@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: sms_bulk_app_production
-  username: sms_bulk_app
-  password: <%= ENV["SMS_BULK_APP_DATABASE_PASSWORD"] %>
+   url: <%= ENV['DATABASE_URL'] %>
+  #database: sms_bulk_app_production
+  #username: sms_bulk_app
+  #password: <%= ENV["SMS_BULK_APP_DATABASE_PASSWORD"] %>
